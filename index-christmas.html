@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
+  <title>coffeegarage.ca</title>
+  <style>
+    body {
+      background-color: #0c2e1d;
+    }
+
+    #brew {
+      background-image: url("./coffeegarage-1-santa.png"), url("./coffeegarage-0.png"), url("./coffeegarage-2.png");
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+      zoom: 100%;
+      -webkit-animation: brew 1125s linear infinite;
+      -moz-animation: brew 1125s linear infinite;
+      -ms-animation: brew 1125s linear infinite;
+      animation: brew 1125s linear infinite;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    @keyframes brew {
+      0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+      }
+
+      100% {
+        background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;
+      }
+    }
+
+    @-moz-keyframes brew {
+      0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+      }
+
+      100% {
+        background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;
+      }
+    }
+
+    @-webkit-keyframes brew {
+      0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+      }
+
+      100% {
+        background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;
+      }
+    }
+
+    @-ms-keyframes brew {
+      0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+      }
+
+      100% {
+        background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="brew" aria-label="Drip coffee makers and coffee carafes are moving across the screen.">
+  </div>
+  <canvas></canvas>
+
+</body>
+<script type="text/javascript" src="./snow.js"></script>
+</html>
